@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/cards?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://localhost:3306/loans?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
     username: root
     password: Suvam@123
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -15,4 +15,4 @@ spring:
     show-sql: true
 
 server:
-  port: 9000
+  port: 8090

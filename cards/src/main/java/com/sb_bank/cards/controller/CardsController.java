@@ -21,8 +21,8 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @Tag(
-        name = "CRUD API's for Accounts MS",
-        description = "Performs CRUD Operation on the account details"
+        name = "CRUD API's for Card MS",
+        description = "Performs CRUD Operation on the card details"
 )
 @RestController
 @RequestMapping(value = "/api/cards", produces = MediaType.APPLICATION_JSON_VALUE)

@@ -1,6 +1,9 @@
 package com.sb_bank.accounts.exception;
 
 import com.sb_bank.accounts.dto.ErrorResponseDTO;
+
+import jakarta.validation.constraints.NotNull;
+
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
@@ -58,6 +61,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     }
 
     @Override
+    @NotNull
     protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
                                                                   HttpHeaders headers,
                                                                   HttpStatusCode status,
